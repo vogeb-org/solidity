@@ -1,0 +1,24 @@
+{
+  "name": "solidity-tutorial",
+  "version": "1.0.0",
+  "description": "Solidity智能合约开发教程",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "solidity",
+    "blockchain",
+    "smart-contract",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "vitepress": "^1.5.0",
+    "vue": "^3.4.3"
+  }
+}

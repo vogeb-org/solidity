@@ -1,0 +1,18 @@
+:root {
+  --vp-c-brand: #3eaf7c;
+  --vp-c-brand-dark: #2c8f63;
+  --vp-c-brand-light: #4abf8a;
+}
+
+.source-code {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+}
+
+.source-code h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--vp-c-text-1);
+} 
