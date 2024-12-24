@@ -1,7 +1,7 @@
 {
   "name": "solidity-tutorial",
   "version": "1.0.0",
-  "description": "Solidity智能合约开发教程",
+  "description": "Solidity Smart Contract Development Tutorial",
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
