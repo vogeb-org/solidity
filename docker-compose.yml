@@ -1,27 +1,16 @@
-version: '3.8'
+version: '3.9'
 
 services:
-  vitepress-build:
+  vogeb-solidity:
     # 使用 Dockerfile 构建镜像
+    # Build the image using Dockerfile
     build:
       context: . # 使用当前目录的 Dockerfile
-    container_name: vitepress-build
-    volumes:
-      - ./docs:/usr/src/app/docs
-      - ./node_modules:/usr/src/app/node_modules
+      # Use the Dockerfile in the current directory
+    container_name: vogeb-solidity
     ports:
-      - "3000:3000" # 映射本地端口到容器
-    environment:
-      - NODE_ENV=development
-    command: ["npm", "run", "dev"]  # 启动 VitePress 开发环境
-
-  nginx:
-    image: nginx:alpine
-    container_name: vitepress-nginx
-    volumes:
-      - ./docs/.vitepress/dist:/usr/share/nginx/html:ro # 使用 VitePress 构建后的静态文件
-    ports:
-      - "80:80"  # 将容器的 80 端口映射到宿主机的 80 端口
-    depends_on:
-      - vitepress-build  # 确保 vitepress-build 完成后再启动 Nginx
+      - "3000:80"  # 将容器的 80 端口映射到宿主机的 80 端口
+      # Map container port 80 to host port 80
     restart: always
+    environment:
+      - NODE_ENV=production

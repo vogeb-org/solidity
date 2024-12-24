@@ -1,7 +1,15 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  // SEO 配置
+
+  vite: {
+      // 服务器配置 / Server Configuration
+    server: {
+      port: 3000,
+    },
+  },
+  srcExclude: ['**/README.md'],
+  // SEO 配置 / SEO Configuration
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
     ['meta', { name: 'author', content: 'Solidity Tutorial' }],
@@ -11,28 +19,28 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'Solidity Tutorial' }],
     
-    // 规范链接
+    // 规范链接 / Canonical Link
     ['link', { rel: 'canonical', href: 'https://solidity.vogeb.com' }]
   ],
 
-  // 站点地图
+  // 站点地图 / Sitemap
   sitemap: {
     hostname: 'https://solidity.vogeb.com'
   },
 
-  // 清理 URL
+  // 清理 URL / Clean URLs
   cleanUrls: true,
 
-  // 最后更新时间
+  // 最后更新时间 / Last Updated
   lastUpdated: true,
 
-  // Markdown 配置
+  // Markdown 配置 / Markdown Configuration
   // markdown: {
   //   theme: 'github-light',
   //   lineNumbers: true
   // },
 
-  // 语言切换
+  // 语言切换 / Locales
   locales: {
     root: {
       label: 'English',
@@ -260,6 +268,8 @@ export default defineConfig({
     }
   },
 
+
+
   themeConfig: {
     logo: '/logo.png',
 
@@ -314,4 +324,4 @@ export default defineConfig({
       }
     }
   }
-}) 
+})
