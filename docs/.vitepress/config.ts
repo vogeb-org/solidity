@@ -11,7 +11,7 @@ export default defineConfig({
   srcExclude: ['**/README.md'],
   // SEO 配置 / SEO Configuration
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: 'Solidity Tutorial' }],
     ['meta', { name: 'keywords', content: 'Solidity, Smart Contract, Blockchain, Ethereum, Web3, DApp, Token, NFT, DeFi' }],
     
@@ -271,7 +271,7 @@ export default defineConfig({
 
 
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/logo.svg',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vogeb-org/solidity' }
@@ -316,8 +316,8 @@ export default defineConfig({
                   selectText: '选择',
                   navigateText: '切换',
                   closeText: '关闭'
-                }
-              }
+                },
+              },
             }
           }
         }
