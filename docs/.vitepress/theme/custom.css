@@ -15,4 +15,9 @@
   margin-top: 0;
   font-size: 1.2rem;
   color: var(--vp-c-text-1);
-} 
+}
+
+.VPImage.logo {
+  width: 45px; /* 设置 logo 宽度 */
+  height: auto; /* 保持比例 */
+}

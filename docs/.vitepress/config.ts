@@ -11,7 +11,7 @@ export default defineConfig({
   srcExclude: ['**/README.md'],
   // SEO 配置 / SEO Configuration
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],  // 如果使用 SVG 图标
     ['meta', { name: 'author', content: 'Solidity Tutorial' }],
     ['meta', { name: 'keywords', content: 'Solidity, Smart Contract, Blockchain, Ethereum, Web3, DApp, Token, NFT, DeFi' }],
     
